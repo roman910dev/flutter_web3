@@ -1,6 +1,8 @@
 @JS("ethers")
 library ethers;
 
+import 'dart:js';
+
 import 'package:js/js.dart';
 import 'package:js/js_util.dart';
 

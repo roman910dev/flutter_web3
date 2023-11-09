@@ -417,6 +417,9 @@ class Web3Provider extends Provider<_Web3ProviderImpl> {
   factory Web3Provider.fromWalletConnect(WalletConnectProvider walletConnect) =>
       Web3Provider._(_Web3ProviderImpl(walletConnect.impl));
 
+  factory Web3Provider.custom(provider) =>
+      Web3Provider._(_Web3ProviderImpl(provider));
+
   const Web3Provider._(_Web3ProviderImpl impl) : super._(impl);
 
   /// Connect [this] to create [Signer] object.
